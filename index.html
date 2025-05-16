@@ -6,48 +6,87 @@
     <title>Leis Femininas</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            text-align: center;
+        }
         header {
-            background-color: #9E005D; /* Cor de fundo do cabeçalho. */
-            color: white; /* Cor do texto do cabeçalho. */
-            padding: 40px 0; /* Adiciona preenchimento ao cabeçalho. */
-            margin: 0; /* Remove a margem do cabeçalho. */
-            text-align: center; /* Alinha o texto ao centro. */
-            font-family: 'Times New Roman', serif; /* Fonte do cabeçalho. */
+            background-color: #9E005D;
+            color: white;
+            padding: 40px 0;
+            margin: 0;
+            text-align: center;
+            font-family: 'Times New Roman', serif;
         }
         header h1 {
-            margin: 0; /* Remove a margem do cabeçalho. */
-            font-size: 4rem; /* Tamanho da fonte do cabeçalho. */
-            padding: 0px; /* Remove o preenchimento do cabeçalho. */
+            margin: 0;
+            font-size: 4rem;
+            padding: 0px;
         }
         main {
-            padding: 20px; /* Adiciona preenchimento ao conteúdo principal. */
-            margin: 26px; /* Adiciona margem ao conteúdo principal. */
-            text-align: center; /* Alinha o texto ao centro. */
-            font-family: 'Cambria', serif; /* Fonte do texto principal. */
-            background-color: white; /* Cor de fundo do texto principal. */
-            font-size: 2rem; /* Tamanho da fonte do texto principal. */
+            padding: 20px;
+            margin: 26px auto;
+            text-align: center;
+            font-family: 'Cambria', serif;
+            background-color: white;
+            font-size: 2rem;
+            max-width: 95vw;
+            box-sizing: border-box;
         }
         main h2 {
-            color: #9E005D; /* Cor do texto do cabeçalho. */
-            font-size: 2.5rem; /* Tamanho da fonte do cabeçalho. */
-            word-spacing: -5px; /* Espaçamento entre as palavras do cabeçalho. */
+            color: #9E005D;
+            font-size: 2.5rem;
+            word-spacing: -5px;
         }
         header h2 {
-            word-spacing: -5px; /* Espaçamento entre as palavras do cabeçalho. */
-            font-size: 2.5rem; /* Tamanho da fonte do cabeçalho. */
-            margin: 0; /* Remove a margem do cabeçalho. */
-            padding: 0px; /* Remove o preenchimento do cabeçalho. */
-            font-weight: normal; /* Define o peso da fonte como normal. */
-            color: white; /* Cor do texto do cabeçalho. */
-            font-family: 'Times New Roman', serif; /* Fonte do cabeçalho. */
+            word-spacing: -5px;
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 0px;
+            font-weight: normal;
+            color: white;
+            font-family: 'Times New Roman', serif;
         }
         .wrapper {
-            padding-bottom: 100px; /*Adiciona um espaço na parte inferior do conteúdo.*/
-            margin: 0 auto; /* Centraliza o conteúdo na página. */
-            max-width: 1200px; /* Define uma largura máxima para o conteúdo. */
-            display: flex; /* Usado para alinhar os elementos filhos em linha. */
-            flex-direction: column; /* Alinha os elementos filhos em coluna. */
-            align-items: center; /* Centraliza os elementos filhos horizontalmente. */
+            padding-bottom: 100px;
+            margin: 0 auto;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main img {
+            display: block;
+            margin: 10px auto 0 auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+        a {
+            word-break: break-all;
+        }
+        /* Responsivo para telas menores */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header h2, main h2 {
+                font-size: 1.3rem;
+            }
+            main {
+                font-size: 1.1rem;
+                padding: 10px;
+                margin: 10px 0;
+                max-width: 100vw;
+            }
+            .wrapper {
+                padding-bottom: 40px;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
