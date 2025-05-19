@@ -19,19 +19,19 @@
         header {
             background-color: #9E005D;
             color: white;
-            padding: 24px 0; /* Reduzido */
+            padding: 24px 0;
             margin: 0;
             text-align: center;
             font-family: 'Times New Roman', serif;
         }
         header h1 {
             margin: 0;
-            font-size: 2.2rem; /* Reduzido */
+            font-size: 1.8rem;
             padding: 0px;
         }
         header h2 {
-            word-spacing: -5px;
-            font-size: 1.3rem; /* Reduzido */
+            word-spacing: normal;
+            font-size: 1.1rem;
             margin: 0;
             padding: 0px;
             font-weight: normal;
@@ -39,25 +39,26 @@
             font-family: 'Times New Roman', serif;
         }
         main {
-            padding: 20px;
-            margin: 26px auto;
+            padding: 10px;
+            margin: 10px 0;
             text-align: center;
             font-family: 'Cambria', serif;
             background-color: white;
-            font-size: 2rem;
-            max-width: 95vw;
+            font-size: 1.1rem;
+            max-width: 98vw;
             box-sizing: border-box;
             word-break: break-word;
+            word-spacing: normal;
         }
         main h2 {
             color: #9E005D;
-            font-size: 2.5rem;
-            word-spacing: -5px;
+            font-size: 1.3rem;
+            word-spacing: normal;
         }
         .wrapper {
-            padding-bottom: 100px;
+            padding-bottom: 40px;
             margin: 0 auto;
-            max-width: 1200px;
+            max-width: 100vw;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -72,12 +73,16 @@
         a {
             word-break: break-all;
         }
-        /* Responsivo para telas menores */
+        /* Diminui o primeiro main destacado */
+        .wrapper > main:first-of-type {
+            font-size: 1.1rem !important;
+            padding: 12px !important;
+            margin-top: 20px !important;
+            background-color: #9E005D !important;
+            color: white !important;
+        }
+        /* Mantém responsividade para telas pequenas */
         @media (max-width: 600px) {
-            html, body {
-                width: 100vw;
-                overflow-x: hidden;
-            }
             header {
                 padding: 12px 0;
             }
@@ -86,25 +91,9 @@
             }
             header h2, main h2 {
                 font-size: 1rem;
-                word-spacing: normal;
             }
             main {
                 font-size: 1rem;
-                padding: 10px;
-                margin: 10px 0;
-                max-width: 98vw;
-                word-spacing: normal;
-                word-break: break-word;
-            }
-            .wrapper {
-                padding-bottom: 40px;
-                max-width: 100vw;
-            }
-            /* Diminui o primeiro main destacado */
-            .wrapper > main:first-of-type {
-                font-size: 1.1rem !important;
-                padding: 12px !important;
-                margin-top: 20px !important;
             }
         }
     </style>
@@ -126,7 +115,7 @@
             alt="Imagem 1"
             style="display: block; margin: 10px auto 0 auto; width: 1000px; height: auto; border-radius: 12px;">
             <p>Mulheres devem receber o mesmo salário dos homens que executam a mesma função.
-Hoje, infelizmente essa igualdade não existe no Brasil: elas ganham 20% a menos. A disparidade é ainda maior entre as mulheres negras, que ganham 50% a menos que os homens não negros. Lei nº 14.611/2023 + Art. 461 (CLT)
+Hoje, infelizmente essa igualdade não existe no Brasil: elas ganham 20% a menos. A disparidade é ainda maior entre as mulheres negras, que ganham 50% a menos que os homens não negros. <strong>Lei nº 14.611/2023</strong> + Art. 461 (CLT)
 </p>
         </main>
         <main style="margin-top: 50px;" data-aos="fade-up">
@@ -135,7 +124,7 @@ Hoje, infelizmente essa igualdade não existe no Brasil: elas ganham 20% a menos
             alt="Imagem 2"
             style="display: block; margin: 10px auto 0 auto; width: 60%; height: auto; border-radius: 12px;">
             <p>Mulheres não podem ser discriminadas ou assediadas moralmente devido à necessidade de eventuais afastamentos relacionados à maternidade, como licença à gestante ou intervalos para amamentação. Art. 373-A (CLT)
-Elas também são as principais vítimas do assédio sexual, prática que deve ser prevenida e combatida pelo empregador nos ambientes de trabalho. Lei nº 10.224/2001 + CLT
+Elas também são as principais vítimas do assédio sexual, prática que deve ser prevenida e combatida pelo empregador nos ambientes de trabalho. <strong>Lei nº 10.224/2001</strong> + CLT
 </p>
         </main>
         <main style="margin-top: 50px;" data-aos="fade-up">
@@ -168,12 +157,12 @@ Durante a licença-maternidade, os salários são pagos pelo empregador, que ded
             style="display: block; margin: 10px auto 0 auto; width: 60%; height: auto; border-radius: 12px;">
             <p>As gestantes têm direito a estabilidade no emprego, da confirmação da gravidez até cinco meses após o parto. Nesse período, só podem ser despedidas se for por justa causa. O direito também é estendido às mães adotantes. Art. 391-A (CLT)</p>
         </main>
-                <main style="margin-top: 50px;" data-aos="fade-up">
+        <main style="margin-top: 50px;" data-aos="fade-up">
             <h2>PROIBIÇÃO DAS REVISTAS ÍNTIMAS</h2>
             <img src=""
             alt="Imagem 7"
             style="display: block; margin: 10px auto 0 auto; width: 60%; height: auto; border-radius: 12px;">
-            <p>É proibido ao empregador ou seu preposto realizar revista íntima em funcionárias. A prática é considerada violação da dignidade da pessoa humana e da intimidade da mulher, sendo proibida expressamente esse tipo de revista em ambientes de trabalho, tanto públicos quanto privados. O descumprimento pode gerar sanções administrativas e judiciais Lei nº 13.271/2016</p>
+            <p>É proibido ao empregador ou seu preposto realizar revista íntima em funcionárias. A prática é considerada violação da dignidade da pessoa humana e da intimidade da mulher, sendo proibida expressamente esse tipo de revista em ambientes de trabalho, tanto públicos quanto privados. O descumprimento pode gerar sanções administrativas e judiciais <strong>Lei nº 13.271/2016</strong></p>
         </main>
         <main style="color: white; background-color: #9E005D; padding: 40px;"><strong> É necessário que as mulheres conheçam e exijam esses direitos e que empresas cumpram a legislação trabalhista.</strong></main>
         <main>
